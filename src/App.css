@@ -1,20 +1,16 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +18,59 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 5px solid white; /* Borda branca */
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  margin: 20px; /* Margem em torno do componente */
 }
 
-.App-link {
-  color: #61dafb;
+.App-header:hover {
+  background: linear-gradient(135deg, #182848, #4b6cb7);
 }
 
-@keyframes App-logo-spin {
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background-color: #61dafb; /* Cor do botão */
+  border: none;              /* Sem borda */
+  border-radius: 5px;       /* Bordas arredondadas */
+  padding: 10px 20px;       /* Espaçamento interno */
+  font-size: 1rem;          /* Tamanho da fonte do botão */
+  color: #282c34;           /* Cor do texto do botão */
+  cursor: pointer;          /* Cursor em forma de mão ao passar o mouse */
+  transition: background 0.3s; /* Transição de cor do botão */
+  margin: 10px;            /* Margem em torno do botão */
+}
+
+.button:hover {
+  background-color: #21a1f1; /* Cor do botão ao passar o mouse */
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+/* Estilo para mensagens e links */
+p {
+  font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+  color: white;      /* Cor do texto dos parágrafos */
+}
+
+a {
+  color: #61dafb;    /* Cor do link */
+  text-decoration: none; /* Sem sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
 }

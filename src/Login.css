@@ -1,0 +1,94 @@
+/* src/Login.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Login {
+    text-align: center;
+    padding: 20px;
+}
+
+.Login-header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna para alinhar como App.css */
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    border: 5px solid white; /* Borda branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    margin: 20px; /* Margem em torno do componente */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Quadro translúcido */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Sombra mais forte */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    width: 300px; /* Largura fixa para o quadro */
+    margin: 20px; /* Margem para afastar do conteúdo ao redor */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Espaço entre os campos de entrada */
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Largura total para os campos de entrada */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #61dafb; /* Efeito de foco com borda azul */
+}
+
+.button {
+    background-color: #61dafb; /* Cor do botão */
+    border: none;              /* Sem borda */
+    border-radius: 5px;       /* Bordas arredondadas */
+    padding: 10px 20px;       /* Espaçamento interno */
+    font-size: 1rem;          /* Tamanho da fonte do botão */
+    color: #282c34;           /* Cor do texto do botão */
+    cursor: pointer;          /* Cursor em forma de mão ao passar o mouse */
+    transition: background 0.3s; /* Transição de cor do botão */
+    margin: 10px;            /* Margem em torno do botão */
+}
+
+.button:hover {
+    background-color: #21a1f1; /* Cor ao passar o mouse */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo para mensagens e links */
+p {
+    font-size: 1.2rem; /* Tamanho da fonte dos parágrafos */
+    color: white;      /* Cor do texto dos parágrafos */
+}
+
+a {
+    color: #61dafb;    /* Cor do link */
+    text-decoration: none; /* Sem sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
